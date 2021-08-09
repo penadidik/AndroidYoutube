@@ -21,35 +21,35 @@ class MainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Toast.makeText(requireContext(), "Siklus hidup onDestroyView!", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        Toast.makeText(requireContext(), "Siklus hidup onDetach!", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Toast.makeText(requireContext(), "Siklus hidup onStart!", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Toast.makeText(requireContext(), "Siklus hidup onPause!", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Toast.makeText(requireContext(), "Siklus hidup onResume!", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Toast.makeText(requireContext(), "Siklus hidup onDestroy!", Toast.LENGTH_SHORT).show()
-    }
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        Toast.makeText(requireContext(), "Siklus hidup onDestroyView!", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onDetach() {
+//        super.onDetach()
+//        Toast.makeText(requireContext(), "Siklus hidup onDetach!", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onStart() {
+//        super.onStart()
+//        Toast.makeText(requireContext(), "Siklus hidup onStart!", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//        Toast.makeText(requireContext(), "Siklus hidup onPause!", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onResume() {
+//        super.onResume()
+//        Toast.makeText(requireContext(), "Siklus hidup onResume!", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onDestroy() {
+//        super.onDestroy()
+//        Toast.makeText(requireContext(), "Siklus hidup onDestroy!", Toast.LENGTH_SHORT).show()
+//    }
 
 
     companion object {}
