@@ -3,7 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    android:background="#1113">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="tombol"
+        android:layout_gravity="left|center_vertical"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="tombol"
+        android:layout_gravity="right|center_vertical"
+        android:background="@color/cardview_shadow_start_color"/>
 
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -73,80 +93,80 @@
 
 <!--    </RelativeLayout>-->
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1">
+<!--    <TableLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:stretchColumns="1">-->
 
-        <TableRow
-            android:background="#22ff">
-            <TextView
-                android:layout_column="1"
-                android:text="Open..."
-                android:padding="3dip"/>
-            <TextView
-                android:text="Ctr-O"
-                android:gravity="right"
-                android:padding="3dip"/>
-        </TableRow>
+<!--        <TableRow-->
+<!--            android:background="#22ff">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Open..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-O"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
 
-        <TableRow android:background="#22ff">
-            <TextView
-                android:layout_column="1"
-                android:text="Save..."
-                android:padding="3dip"/>
-            <TextView
-                android:text="Ctr-S"
-                android:gravity="right"
-                android:padding="3dip"/>
-        </TableRow>
+<!--        <TableRow android:background="#22ff">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Save..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-S"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
 
-        <TableRow android:background="#22ff">
-            <TextView
-                android:layout_column="1"
-                android:text="Save As..."
-                android:padding="3dip"/>
-            <TextView
-                android:text="Ctr-Shift-S"
-                android:gravity="right"
-                android:padding="3dip"/>
-        </TableRow>
+<!--        <TableRow android:background="#22ff">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Save As..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-Shift-S"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
 
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090"/>
+<!--        <View-->
+<!--            android:layout_height="2dip"-->
+<!--            android:background="#FF909090"/>-->
 
-        <TableRow android:background="#ffff00">
-            <TextView
-                android:text="x"
-                android:padding="3dip"/>
-            <TextView
-                android:text="Import"
-                android:padding="3dip"/>
-        </TableRow>
+<!--        <TableRow android:background="#ffff00">-->
+<!--            <TextView-->
+<!--                android:text="x"-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Import"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
 
-        <TableRow android:background="#ffff00">
-            <TextView
-                android:layout_column="1"
-                android:text="Export..."
-                android:padding="3dip"/>
-            <TextView
-                android:text="Ctr-E"
-                android:gravity="right"
-                android:padding="3dip"/>
-        </TableRow>
+<!--        <TableRow android:background="#ffff00">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Export..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-E"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
 
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090"/>
+<!--        <View-->
+<!--            android:layout_height="2dip"-->
+<!--            android:background="#FF909090"/>-->
 
-        <TableRow android:background="#aaf">
-            <TextView
-                android:layout_column="1"
-                android:text="Quit..."
-                android:padding="3dip"/>
-        </TableRow>
+<!--        <TableRow android:background="#aaf">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Quit..."-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
 
-    </TableLayout>
+<!--    </TableLayout>-->
 
 </FrameLayout>
