@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    android:layout_margin="20dp"
+    android:background="#1113">
+
+    <TextView
+        android:id="@+id/iniText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Ini menggunakan constraint layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini adalah tombol"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iniText" />
+
+    <!--    <ImageView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@color/cardview_shadow_start_color"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="tombol"-->
+<!--        android:layout_gravity="left|center_vertical"-->
+<!--        android:background="@color/cardview_shadow_start_color"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="tombol"-->
+<!--        android:layout_gravity="right|center_vertical"-->
+<!--        android:background="@color/cardview_shadow_start_color"/>-->
 
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -37,40 +85,116 @@
 
 <!--    </LinearLayout>-->
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:paddingRight="16dp">-->
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="reminder"/>
+<!--        <EditText-->
+<!--            android:id="@+id/name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="reminder"/>-->
 
-        <Spinner
-            android:id="@+id/dates"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/name"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/times" />
+<!--        <Spinner-->
+<!--            android:id="@+id/dates"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/name"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_toLeftOf="@+id/times" />-->
 
-        <Spinner
-            android:id="@+id/times"
-            android:layout_width="96dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/name"
-            android:layout_alignParentRight="true"/>
+<!--        <Spinner-->
+<!--            android:id="@+id/times"-->
+<!--            android:layout_width="96dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/name"-->
+<!--            android:layout_alignParentRight="true"/>-->
 
-        <Button
-            android:layout_width="96dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/times"
-            android:layout_alignParentRight="true"
-            android:text="done" />
+<!--        <Button-->
+<!--            android:layout_width="96dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/times"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:text="done" />-->
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
-</FrameLayout>
+<!--    <TableLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:stretchColumns="1">-->
+
+<!--        <TableRow-->
+<!--            android:background="#22ff">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Open..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-O"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:background="#22ff">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Save..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-S"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:background="#22ff">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Save As..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-Shift-S"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
+
+<!--        <View-->
+<!--            android:layout_height="2dip"-->
+<!--            android:background="#FF909090"/>-->
+
+<!--        <TableRow android:background="#ffff00">-->
+<!--            <TextView-->
+<!--                android:text="x"-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Import"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:background="#ffff00">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Export..."-->
+<!--                android:padding="3dip"/>-->
+<!--            <TextView-->
+<!--                android:text="Ctr-E"-->
+<!--                android:gravity="right"-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
+
+<!--        <View-->
+<!--            android:layout_height="2dip"-->
+<!--            android:background="#FF909090"/>-->
+
+<!--        <TableRow android:background="#aaf">-->
+<!--            <TextView-->
+<!--                android:layout_column="1"-->
+<!--                android:text="Quit..."-->
+<!--                android:padding="3dip"/>-->
+<!--        </TableRow>-->
+
+<!--    </TableLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
