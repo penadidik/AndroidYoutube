@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:background="#1113">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:background="@color/cardview_shadow_start_color"/>
+    <TextView
+        android:id="@+id/iniText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Ini menggunakan constraint layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="tombol"
-        android:layout_gravity="left|center_vertical"
-        android:background="@color/cardview_shadow_start_color"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini adalah tombol"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iniText" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="tombol"
-        android:layout_gravity="right|center_vertical"
-        android:background="@color/cardview_shadow_start_color"/>
+    <!--    <ImageView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@color/cardview_shadow_start_color"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="tombol"-->
+<!--        android:layout_gravity="left|center_vertical"-->
+<!--        android:background="@color/cardview_shadow_start_color"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="tombol"-->
+<!--        android:layout_gravity="right|center_vertical"-->
+<!--        android:background="@color/cardview_shadow_start_color"/>-->
 
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -169,4 +197,4 @@
 
 <!--    </TableLayout>-->
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
