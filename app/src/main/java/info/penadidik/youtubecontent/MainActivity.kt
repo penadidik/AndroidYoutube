@@ -2,6 +2,7 @@ package info.penadidik.youtubecontent
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
 
@@ -13,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         val fragment: FragmentTransaction = supportFragmentManager.beginTransaction()
         fragment.replace(R.id.placeFragment, MainFragment())
         fragment.commit()
+//        Handler().postDelayed({
+//            fragment.commit()
+//        }, 1000)
     }
 
 //    override fun onStart() {
